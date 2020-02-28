@@ -425,21 +425,32 @@ table {
   z-index: 5;
 }
 
+.left-menu .left-menu__wrapper .left-menu__menu .menu__selection {
+  height: 42px;
+  width: 102px;
+  padding: 0 21px;
+  position: absolute;
+  background: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(0%, #3a74de), to(#91a0b9));
+  background: linear-gradient(90deg, #020024 0%, #3a74de 0%, #91a0b9 100%);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  border-radius: 5px;
+  display: none;
+}
+
 .left-menu .left-menu__wrapper .left-menu__menu .menu__item {
   outline: none;
   z-index: 7;
   width: 102px;
-  padding: 13px 21px;
+  padding: 0 21px;
+  height: 42px;
+  line-height: 42px;
   color: #fff;
   text-decoration: none;
-  margin-top: 10px;
   border-radius: 7px;
-}
-
-.left-menu .left-menu__wrapper .left-menu__menu .menu__item.active, .left-menu .left-menu__wrapper .left-menu__menu .menu__item:hover {
-  background: #020024;
-  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(0%, #3a74de), to(#91a0b9));
-  background: linear-gradient(90deg, #020024 0%, #3a74de 0%, #91a0b9 100%);
 }
 
 .left-menu .left-menu--logo {
