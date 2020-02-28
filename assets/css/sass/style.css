@@ -396,6 +396,12 @@ table {
   height: 100vh;
 }
 
+.left-menu.mobile {
+  display: none;
+  position: absolute;
+  z-index: 5;
+}
+
 .left-menu .left-menu__wrapper {
   position: fixed;
   display: -webkit-box;

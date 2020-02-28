@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TheHeader />
+    <TheMobile />
     <div class="page">
       <TheSideNav />
       <nuxt />
@@ -12,14 +12,14 @@
 </template>
 
 <script>
-import TheHeader from '@/components/navigation/TheHeader';
+import TheMobile from '@/components/navigation/TheMobile';
 import TheSideNav from '@/components/navigation/TheSideNav';
 import TheSidebar from '@/components/navigation/TheSidebar';
 
 
 export default {
   components: {
-    TheHeader,
+    TheMobile,
     TheSideNav,
     TheSidebar
   }

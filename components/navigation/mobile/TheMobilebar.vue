@@ -2,7 +2,7 @@
     <div class="mobile_menu">
         <div class="mobile_menu__items">
             <div class="mobile_menu__item">
-                <a class="menu__togle">
+                <a @click="openMenu" class="menu__togle">
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
@@ -67,3 +67,13 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    methods: {
+        openMenu() {
+            this.$store.commit("navigation/openMenu")
+        }
+    }
+}
+</script>
