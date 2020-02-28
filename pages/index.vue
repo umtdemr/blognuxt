@@ -3,10 +3,10 @@
     <div>
       <logo />
       <h1 class="title">
-        blog
+        blognuxt
       </h1>
       <h2 class="subtitle">
-        umit demir&#39;s blog
+        test blog
       </h2>
       <div class="links">
         <a

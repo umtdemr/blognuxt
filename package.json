@@ -1,7 +1,7 @@
 {
-  "name": "blog",
+  "name": "blognuxt",
   "version": "1.0.0",
-  "description": "umit demir&#39;s blog",
+  "description": "test blog",
   "author": "umit",
   "private": true,
   "scripts": {
