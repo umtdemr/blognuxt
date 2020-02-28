@@ -1,0 +1,229 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url("~assets/fonts/OpenSans-Regular.ttf");
+}
+
+.left-menu {
+  width: 150px;
+  padding: 40px 20px 10px 10px;
+  background-color: #3A74DE;
+  height: 100vh;
+}
+
+.left-menu .left-menu__wrapper {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 4;
+}
+
+.left-menu .left-menu__wrapper .left-menu__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+  z-index: 5;
+}
+
+.left-menu .left-menu__wrapper .left-menu__menu .menu__item {
+  outline: none;
+  z-index: 7;
+  width: 102px;
+  padding: 13px 21px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  border-radius: 7px;
+}
+
+.left-menu .left-menu__wrapper .left-menu__menu .menu__item.active, .left-menu .left-menu__wrapper .left-menu__menu .menu__item:hover {
+  background: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(0%, #3a74de), to(#91a0b9));
+  background: linear-gradient(90deg, #020024 0%, #3a74de 0%, #91a0b9 100%);
+}
+
+.left-menu .left-menu--logo {
+  width: 82px;
+}
+
+.mobile_menu {
+  height: 50px;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 19px;
+  background-color: #3A74DE;
+  color: #f5f5f5;
+  position: relative;
+}
+
+.mobile_menu .mobile-menu--logo {
+  width: 40px;
+}
+
+.mobile_menu .mobile_menu__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile_menu .mobile_menu__items .mobile_menu__item .menu__togle {
+  font-size: 24px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.mobile_menu .mobile_menu__items .mobile_menu__item a {
+  color: #f5f5f5;
+  text-decoration: none;
+  outline: none;
+}
+
+.mobile_menu .mobile_menu__items .mobile_menu__item a.active {
+  color: #49D797;
+}
+
+.mobile_menu .mobile_menu__right #mobile_menu__search {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  padding-right: 44px;
+  padding-left: 15px;
+  display: none;
+  border-radius: 0px;
+  border: none;
+  background: #3A74DE;
+  color: #fff;
+}
+
+.mobile_menu .mobile_menu__right .mobile_menu__search_opener {
+  cursor: pointer;
+}
+
+.mobile_menu .mobile_menu__right .mobile_menu__search_closer {
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  display: none;
+  right: 18px;
+  top: 18px;
+}
+
+.mobile_menu .mobile_menu__results {
+  display: none;
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  z-index: 1;
+  -webkit-box-shadow: 0px 2px 5px #333;
+          box-shadow: 0px 2px 5px #333;
+  color: #333;
+  padding: 10px 0 40px 0;
+  max-height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.mobile_menu .mobile_menu__results .result__title {
+  margin-left: 5px;
+}
+
+.mobile_menu .mobile_menu__results .results__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.mobile_menu .mobile_menu__results .results__wrapper .result__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  outline: none;
+  padding: 10px;
+}
+
+.mobile_menu .mobile_menu__results .results__wrapper .result__item .result__image {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  height: 90px;
+}
+
+.mobile_menu .mobile_menu__results .results__wrapper .result__item .result__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mobile_menu .mobile_menu__results .results__wrapper .result__item .result__summary {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  padding-left: 5px;
+}
+
+.mobile_menu .mobile_menu__results .results__wrapper .result__item .result__summary h3 {
+  color: #000;
+  font-weight: 500;
+}
+
+.mobile_menu .mobile_menu__results .results__wrapper .result__item .result__summary .result__preview {
+  margin-top: 5px;
+  color: #5e5454;
+  max-height: 81px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mobile_menu .mobile_menu__results .results__wrapper .result__more {
+  font-size: 13px;
+  text-decoration: none;
+  color: #333;
+  padding: 5px 0 10px 10px;
+  bottom: 0;
+  text-align: center;
+}
+
+.mobile_menu .mobile_menu__results .results__wrapper .result__more i {
+  font-size: 8px;
+}
+
+@media screen and (max-width: 999px) {
+  .mobile_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=menu.css.map */

@@ -9,8 +9,6 @@ import {
 import NuxtLoading from './components/nuxt-loading.vue'
 import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
-import '../node_modules/@fortawesome/fontawesome-svg-core/styles.css'
-
 import '../assets/css/sass/style.css'
 
 import _6f6c098b from '../layouts/default.vue'
@@ -18,7 +16,7 @@ import _6f6c098b from '../layouts/default.vue'
 const layouts = { "_default": _6f6c098b }
 
 export default {
-  head: {"title":"blog","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"umit demir&#39;s blog"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+  head: {"title":"Ümit Demir'in bloğu","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"test blog"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Ffont-awesome\u002F5.12.1\u002Fcss\u002Fall.min.css"}],"style":[],"script":[]},
 
   render (h, props) {
     const loadingEl = h('NuxtLoading', { ref: 'loading' })
