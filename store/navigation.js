@@ -6,6 +6,12 @@ export const state = () => ({
 export const mutations = {
     openMenu(state) {
         state.menu_opened = true
+    },
+    closeMenu(state) {
+        state.menu_opened = false
+    },
+    toggleMenu(state) {
+        state.menu_opened = !state.menu_opened
     }
 }
 

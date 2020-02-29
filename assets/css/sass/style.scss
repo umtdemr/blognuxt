@@ -18,6 +18,7 @@ body {
 
 
 .page-content{
+    margin-left: 175px;
     width: 70%;
     .page-content__title{
         font-size: 24px;
@@ -43,7 +44,7 @@ body {
 
 
 @media screen and (max-width: 1000px){
-    .left-menu{
+    .left-menu.desktop{
         display: none;
     }
     .page-content{

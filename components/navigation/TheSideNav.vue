@@ -1,5 +1,5 @@
 <template>
-    <div class="left-menu">
+    <div class="left-menu desktop">
         <div class="left-menu__wrapper">
             <img class="left-menu--logo" src="~assets/images/logo-small.png" alt="mediumgoal logosu">
             <div class="left-menu__menu">
