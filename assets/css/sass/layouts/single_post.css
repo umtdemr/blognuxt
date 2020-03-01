@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url("~assets/fonts/OpenSans-Regular.ttf");
+}
+
+.single_post .single_post__summary {
+  margin: 10px 0 20px 0;
+}
+
+.single_post .single_post__summary .single_post__summary--date {
+  font-size: 11px;
+  color: #999999;
+}
+
+.single_post .single_post__content p {
+  color: #333;
+  font-family: 'Helvetica', sans-serif;
+  line-height: 21px;
+}
+
+.single_post .leave_comment {
+  margin-top: 35px;
+  padding: 10px 0;
+  border-top: 2px solid #C3CFD9;
+}
+
+.single_post .leave_comment .leave_comment__title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Helvetica', 'sans-serif';
+}
+
+.single_post .leave_comment .leave_comment__form {
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  width: 406px;
+}
+
+.single_post .leave_comment .leave_comment__form .form__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.single_post .leave_comment .leave_comment__form .form__group label, .single_post .leave_comment .leave_comment__form .form__group input, .single_post .leave_comment .leave_comment__form .form__group textarea {
+  margin-top: 5px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.single_post .leave_comment .leave_comment__form .form__group textarea {
+  resize: vertical;
+  padding-left: 14px;
+}
+
+.single_post .leave_comment .leave_comment__form .form__submit {
+  background: #0C9557;
+  color: #fff;
+  border: 0;
+  padding: 10px 30px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.single_post .leave_comment .leave_comment__form .form__submit:active, .single_post .leave_comment .leave_comment__form .form__submit:hover {
+  background: #49D797;
+}
+
+.single_post .comment_alert {
+  padding: 10px 0 10px 10px;
+  -webkit-box-shadow: 0px 0px 2px #333;
+          box-shadow: 0px 0px 2px #333;
+}
+
+.single_post .comment_alert.success {
+  border-left: 10px solid #0C9557;
+}
+
+.single_post .comment_alert.danger {
+  border-left: 10px solid red;
+}
+
+@media screen and (max-width: 500px) {
+  .leave_comment__form {
+    width: 100% !important;
+    padding: 10px 0 !important;
+  }
+  .leave_comment__form .form__group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .leave_comment__form .form__group input, .leave_comment__form .form__group textarea {
+    width: 85%;
+  }
+}
+/*# sourceMappingURL=single_post.css.map */

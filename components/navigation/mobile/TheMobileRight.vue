@@ -3,7 +3,7 @@
         <div class="mobile_menu__right">
             <span 
                 v-if="isSearchOpen"
-                @click="isSearchOpen = false"
+                @click="closeSearch"
                 class="mobile_menu__search_closer"><i class="fa fa-times"></i></span>
             <transition name="fade">
                 <input
@@ -22,7 +22,7 @@
             
         </transition>
         <div
-            @click="isSearchOpen = false" 
+            @click="closeSearch()" 
             v-if="isSearchOpen"
             class="mobile_search_overlay"></div>
     </div>
@@ -42,7 +42,14 @@ export default {
     },
     methods: {
         openSearch() {
-           this.isSearchOpen = true;
+            let body = document.querySelector("body");
+            body.style.overflowY = "hidden";
+            this.isSearchOpen = true;
+        },
+        closeSearch() {
+            let body = document.querySelector("body");
+            body.style.overflowY = "auto";
+            this.isSearchOpen = false;
         }
     }
 }

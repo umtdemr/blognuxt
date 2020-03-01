@@ -1,11 +1,14 @@
 @import "includes/reset.scss";
 @import "includes/variables.scss";
 @import "layouts/posts.scss";
+@import "layouts/single_post.scss";
 @import "layouts/sidebar.scss";
 @import "layouts/menu.scss";
 
 body {
     font-family: $base-font, 'sans-serif';
+    background-color: $dark-white;
+    overflow-x: hidden;
 }
 
 .page {
@@ -61,5 +64,16 @@ body {
     }
     .page-content{
         width: 100%;
+    }
+}
+@media screen and (max-width: 600px){
+    .page-content, .sidebar{
+        padding: 40px 5px 10px 5px;
+    }
+    .page-content{
+        width: 92%;
+    }
+    .page{
+        justify-content: center;
     }
 }

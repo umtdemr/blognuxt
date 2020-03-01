@@ -1,0 +1,83 @@
+
+@import '../includes/variables.scss';
+.single_post{
+    .single_post__summary {
+        margin: 10px 0 20px 0;
+        .single_post__summary--date{
+            font-size: 11px;
+            color: #999999;
+        }
+    }
+    .single_post__content{
+        p{
+            color:#333;
+            font-family: 'Helvetica', sans-serif;
+            line-height: 21px;
+        }
+    }
+    .leave_comment{
+        margin-top: 35px;
+        padding: 10px 0;
+        border-top: 2px solid $black-opactiy-low;
+        .leave_comment__title{
+            margin-bottom: 15px;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: 'Helvetica', 'sans-serif';
+        }
+        .leave_comment__form{
+            padding: 10px 20px;
+            background-color: #f2f2f2;
+            width: 406px;
+            .form__group{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 10px;
+                label, input, textarea {
+                    margin-top: 5px;
+                    flex: 1;
+                }
+                textarea {
+                    resize: vertical;
+                    padding-left: 14px;
+                }
+            }
+            .form__submit{
+                background: $green-dark;
+                color: #fff;
+                border: 0;
+                padding: 10px 30px;
+                border-radius: 16px;
+                cursor: pointer;
+                &:active, &:hover{
+                    background: $green-ligth;
+                }
+            }
+        }
+    }
+    .comment_alert{
+        padding: 10px 0 10px 10px;
+        box-shadow: 0px 0px 2px #333;
+        &.success {
+            border-left: 10px solid $green-dark;
+        }
+        &.danger {
+            border-left: 10px solid red;
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .leave_comment__form{
+        width: 100% !important;
+        padding: 10px 0 !important;
+        .form__group{
+            flex-direction: column;
+            input, textarea{
+                width: 85%;
+            }
+        }
+    }
+}
