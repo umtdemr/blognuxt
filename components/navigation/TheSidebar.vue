@@ -2,8 +2,12 @@
     <div class="sidebar">
         <div class="sidebar__search">
             <label for="search_blog">Blogda ara</label>
-            <input type="search" name="" id="search_blog" placeholder="Blog da arama yap">
-            <div class="search__results">
+            <input 
+                v-model="searchText"
+                type="search"
+                id="search_blog" 
+                placeholder="Blog da arama yap">
+            <div class="search__results" v-if="searchText != ''">
                 <a href = "#" class="result__item">
                     <div class="result__image">
                         <img src="https://www.breakthroughcollaborative.org/wp-content/uploads/400x400.png" alt="400x400">
@@ -71,3 +75,13 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            searchText: '',
+        }
+    }
+}
+</script>

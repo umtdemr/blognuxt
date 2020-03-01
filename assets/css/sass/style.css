@@ -227,10 +227,69 @@ table {
   line-height: 21px;
 }
 
+.single_post .comment_list {
+  margin-top: 35px;
+  padding: 10px 0;
+  border-top: 1px solid #C3CFD9;
+}
+
+.single_post .comment_list .comment_list--title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Helvetica', 'sans-serif';
+}
+
+.single_post .comment_list .comment_list__wrapper .comment_list__item {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 10px;
+}
+
+.single_post .comment_list .comment_list__wrapper .comment_list__item .item__img {
+  width: 5%;
+  padding: 10px;
+}
+
+.single_post .comment_list .comment_list__wrapper .comment_list__item .item__img img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.single_post .comment_list .comment_list__wrapper .comment_list__item .item__summary {
+  width: 95%;
+  padding: 10px;
+}
+
+.single_post .comment_list .comment_list__wrapper .comment_list__item .item__summary .item__title {
+  font-size: 19px;
+  display: block;
+}
+
+.single_post .comment_list .comment_list__wrapper .comment_list__item .item__summary .item__date {
+  font-size: 11px;
+  color: #999999;
+}
+
+.single_post .comment_list .comment_list__wrapper .comment_list__item .item__summary .item__comment {
+  line-height: 20px;
+  font-size: 13px;
+}
+
+.single_post .comment_list .comment_list__more i {
+  font-size: 11px;
+}
+
 .single_post .leave_comment {
   margin-top: 35px;
   padding: 10px 0;
-  border-top: 2px solid #C3CFD9;
+  border-top: 1px solid #C3CFD9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,6 +369,12 @@ table {
 }
 
 @media screen and (max-width: 500px) {
+  .comment_list__item .item__img {
+    width: 15% !important;
+  }
+  .comment_list__item .item__summary {
+    width: 85% !important;
+  }
   .leave_comment__form {
     width: 100% !important;
     padding: 10px 0 !important;
@@ -333,7 +398,6 @@ table {
 .sidebar {
   width: 15%;
   overflow: hidden;
-  border-left: 1px solid #C3CFD9;
   height: 100vh;
 }
 
@@ -376,7 +440,6 @@ table {
   left: -16px;
   background: #fff;
   z-index: 1;
-  visibility: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -769,6 +832,7 @@ body {
 .page-content {
   margin-left: 175px;
   width: 70%;
+  border-right: 1px solid #C3CFD9;
 }
 
 .page-content .page-content__title {

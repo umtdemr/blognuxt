@@ -15,10 +15,58 @@
             line-height: 21px;
         }
     }
+    .comment_list{
+        margin-top: 35px;
+        padding: 10px 0;
+        border-top: 1px solid $black-opactiy-low;
+        .comment_list--title{
+            margin-bottom: 15px;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: 'Helvetica', 'sans-serif';
+        }
+        .comment_list__wrapper{
+            .comment_list__item{
+                margin-top: 10px;
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 10px;
+                .item__img{
+                    width: 5%;
+                    padding: 10px;
+                    img{
+                        width: 100%;
+                        border-radius: 50%;
+                    }
+                }
+                .item__summary{
+                    width: 95%;
+                    padding: 10px;
+                    .item__title{
+                        font-size: 19px;
+                        display: block;
+                    }
+                    .item__date{
+                        font-size: 11px;
+                        color: #999999;
+                    }
+                    .item__comment{
+                        line-height: 20px;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        .comment_list__more{
+            i{
+                font-size: 11px;
+            }
+        }
+    }
     .leave_comment{
         margin-top: 35px;
         padding: 10px 0;
-        border-top: 2px solid $black-opactiy-low;
+        border-top: 1px solid $black-opactiy-low;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -72,7 +120,16 @@
     }
 }
 
+
 @media screen and (max-width: 500px){
+    .comment_list__item{
+        .item__img{
+            width: 15% !important;
+        }
+        .item__summary{
+            width: 85% !important;
+        }
+    }
     .leave_comment__form{
         width: 100% !important;
         padding: 10px 0 !important;

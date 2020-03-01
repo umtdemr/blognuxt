@@ -19,15 +19,18 @@
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam laborum mollitia hic aperiam blanditiis aspernatur dicta enim, autem vel tempora ipsum delectus architecto necessitatibus, recusandae, minima velit cumque non quod!
                    </p>
           </div>
+          <CommentList />
           <LeaveComment />
     </div>
 </template>
 
 <script>
 import LeaveComment from '@/components/posts/LeaveComment'
+import CommentList from '@/components/posts/CommentList'
 export default {
     components: {
-        LeaveComment
+        LeaveComment,
+        CommentList
     },
     data() {
         return {

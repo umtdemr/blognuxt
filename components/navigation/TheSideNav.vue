@@ -8,7 +8,6 @@
                     to="/"
                     tag="a" 
                     class="menu__item" 
-                    exact
                     active-class="active">
                         Blog
                 </nuxt-link>

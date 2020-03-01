@@ -3,7 +3,6 @@
 .sidebar{
     width: 15%;
     overflow: hidden;
-    border-left: 1px solid $black-opactiy-low;
     height: 100vh;
     .sidebar--title{
         display: block;
@@ -35,7 +34,6 @@
             left: -16px;
             background: #fff;
             z-index: 1;
-            visibility: hidden;
             display: flex;
             flex-direction: column;
             text-align: left;

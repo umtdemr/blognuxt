@@ -23,6 +23,7 @@ body {
 .page-content{
     margin-left: 175px;
     width: 70%;
+    border-right: 1px solid $black-opactiy-low;
     .page-content__title{
         font-size: 24px;
     }
