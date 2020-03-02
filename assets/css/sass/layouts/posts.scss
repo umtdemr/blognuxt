@@ -1,9 +1,12 @@
 @import "../includes/variables.scss";
 
-.post__filter{
+.post__filters{
     margin-bottom: 20px;
     display: flex;
     justify-content: right;
+    .post__category{
+        margin-right: 5px;
+    }
 }
 
 .posts{
@@ -108,6 +111,13 @@
 }
 
 @media screen and (max-width: 767px){
+    .post__filters{
+        flex-direction: column;
+        .post__category{
+            margin-right: 0;
+            margin-bottom: 5px;
+        }
+    }
     .posts{
         .post__item{
             .post__summary{
